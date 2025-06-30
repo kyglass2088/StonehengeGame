@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F7992B7D-F5DB-884E-6A3D-E4C50E177515}</ProjectGuid>
+    <ProjectGuid>{D1C84966-00BE-D254-B174-C782B49813B1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Projectile\ProjectileLauncher.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
