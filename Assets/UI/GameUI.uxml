@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Slider label="Angle" high-value="40" name="Angle" value="-10" low-value="-60" />
+    <ui:Slider label="Speed" high-value="100" name="LaunchSpeed" />
+    <ui:Slider label="Mess" high-value="100" name="Mess" />
+    <ui:Button text="Throw" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ThrowBtn" />
+</ui:UXML>

@@ -1,8 +1,12 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
+
 
 public class ProjectileLauncher : MonoBehaviour
 {
+    public GameUI gameUI;
+
     public Transform launchPoint;
     public GameObject projectile;
     public float launchSpeed = 10f;
@@ -24,11 +28,17 @@ public class ProjectileLauncher : MonoBehaviour
             else
                 lineRenderer.enabled = false;
         }
-        if (Input.GetMouseButtonDown(0))
-        {
-            var _projectile = Instantiate(projectile, launchPoint.position, launchPoint.rotation);
-            _projectile.GetComponent<Rigidbody>().velocity = launchSpeed * launchPoint.up;
-        }
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    var _projectile = Instantiate(projectile, launchPoint.position, launchPoint.rotation);
+        //    _projectile.GetComponent<Rigidbody>().linearVelocity = launchSpeed * launchPoint.up;
+        //}
+    }
+
+    public void ThrowStone()
+    {
+        var _projectile = Instantiate(projectile, launchPoint.position, launchPoint.rotation);
+        _projectile.GetComponent<Rigidbody>().linearVelocity = launchSpeed * launchPoint.up;
     }
 
     void DrawTrajectory()
