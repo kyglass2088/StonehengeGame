@@ -19,6 +19,26 @@
       "source": "registry",
       "testable": false
     },
+    "com.unity.entities@1.3.14": {
+      "name": "com.unity.entities",
+      "displayName": "Entities",
+      "resolvedPath": "C:\\Users\\User\\Desktop\\YBfolder\\StonehengeGame\\Library\\PackageCache\\com.unity.entities@e581b903be8e",
+      "fingerprint": "e581b903be8e7c02ff5b95db7448c5e9b6c5f53f",
+      "editorCompatibility": "2022.3.20f1",
+      "version": "1.3.14",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.entities.graphics@1.4.12": {
+      "name": "com.unity.entities.graphics",
+      "displayName": "Entities Graphics",
+      "resolvedPath": "C:\\Users\\User\\Desktop\\YBfolder\\StonehengeGame\\Library\\PackageCache\\com.unity.entities.graphics@2264b12029b8",
+      "fingerprint": "2264b12029b85d9c18d91f6f55d6488ca9353957",
+      "editorCompatibility": "2022.3.20f1",
+      "version": "1.4.12",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.ide.rider@3.0.36": {
       "name": "com.unity.ide.rider",
       "displayName": "JetBrains Rider Editor",
@@ -421,16 +441,6 @@
       "source": "builtin",
       "testable": false
     },
-    "com.unity.searcher@4.9.3": {
-      "name": "com.unity.searcher",
-      "displayName": "Searcher",
-      "resolvedPath": "C:\\Users\\User\\Desktop\\YBfolder\\StonehengeGame\\Library\\PackageCache\\com.unity.searcher@1e17ce91558d",
-      "fingerprint": "1e17ce91558d1d9127554adc03d275f39a7466a2",
-      "editorCompatibility": "2019.1.0a1",
-      "version": "4.9.3",
-      "source": "registry",
-      "testable": false
-    },
     "com.unity.burst@1.8.21": {
       "name": "com.unity.burst",
       "displayName": "Burst",
@@ -438,6 +448,16 @@
       "fingerprint": "59eb6f11d2422f95682320d9daa3e79fdb076744",
       "editorCompatibility": "2020.3.0a1",
       "version": "1.8.21",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.collections@2.5.7": {
+      "name": "com.unity.collections",
+      "displayName": "Collections",
+      "resolvedPath": "C:\\Users\\User\\Desktop\\YBfolder\\StonehengeGame\\Library\\PackageCache\\com.unity.collections@d49facba0036",
+      "fingerprint": "d49facba0036aa0e1508296262f9d93b44d1ab3b",
+      "editorCompatibility": "2022.3.20f1",
+      "version": "2.5.7",
       "source": "registry",
       "testable": false
     },
@@ -451,33 +471,43 @@
       "source": "registry",
       "testable": false
     },
-    "com.unity.collections@2.5.1": {
-      "name": "com.unity.collections",
-      "displayName": "Collections",
-      "resolvedPath": "C:\\Users\\User\\Desktop\\YBfolder\\StonehengeGame\\Library\\PackageCache\\com.unity.collections@56bff8827a7e",
-      "fingerprint": "56bff8827a7ef6d44fcee4f36e558a74da89c1a0",
-      "editorCompatibility": "2022.3.11f1",
-      "version": "2.5.1",
+    "com.unity.serialization@3.1.2": {
+      "name": "com.unity.serialization",
+      "displayName": "Serialization",
+      "resolvedPath": "C:\\Users\\User\\Desktop\\YBfolder\\StonehengeGame\\Library\\PackageCache\\com.unity.serialization@582cbf30bbfd",
+      "fingerprint": "582cbf30bbfd3c90a738e49c2ad69eafd8803f1d",
+      "editorCompatibility": "2022.2.0a18",
+      "version": "3.1.2",
       "source": "registry",
       "testable": false
     },
-    "com.unity.rendering.light-transport@1.0.1": {
-      "name": "com.unity.rendering.light-transport",
-      "displayName": "Unity Light Transport Library",
-      "resolvedPath": "C:\\Users\\User\\Desktop\\YBfolder\\StonehengeGame\\Library\\PackageCache\\com.unity.rendering.light-transport@56c10358ff14",
-      "fingerprint": "56c10358ff14eb57febd7c4f20246fc73173d069",
-      "editorCompatibility": "2023.3.0b1",
-      "version": "1.0.1",
-      "source": "builtin",
+    "com.unity.profiling.core@1.0.2": {
+      "name": "com.unity.profiling.core",
+      "displayName": "Unity Profiling Core API",
+      "resolvedPath": "C:\\Users\\User\\Desktop\\YBfolder\\StonehengeGame\\Library\\PackageCache\\com.unity.profiling.core@aac7b93912bc",
+      "fingerprint": "aac7b93912bc5df5fe06b04ff1b758493cdc2346",
+      "editorCompatibility": "2020.1.0a1",
+      "version": "1.0.2",
+      "source": "registry",
       "testable": false
     },
-    "com.unity.nuget.mono-cecil@1.11.4": {
+    "com.unity.nuget.mono-cecil@1.11.5": {
       "name": "com.unity.nuget.mono-cecil",
       "displayName": "Mono Cecil",
-      "resolvedPath": "C:\\Users\\User\\Desktop\\YBfolder\\StonehengeGame\\Library\\PackageCache\\com.unity.nuget.mono-cecil@d6f9955a5d5f",
-      "fingerprint": "d6f9955a5d5f84d45442ff1ad0fb694cc6e2fd62",
-      "editorCompatibility": "2018.4.0a1",
-      "version": "1.11.4",
+      "resolvedPath": "C:\\Users\\User\\Desktop\\YBfolder\\StonehengeGame\\Library\\PackageCache\\com.unity.nuget.mono-cecil@d78732e851eb",
+      "fingerprint": "d78732e851eb42273c8e4d97993d3a94b207e570",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "1.11.5",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.scriptablebuildpipeline@2.1.4": {
+      "name": "com.unity.scriptablebuildpipeline",
+      "displayName": "Scriptable Build Pipeline",
+      "resolvedPath": "C:\\Users\\User\\Desktop\\YBfolder\\StonehengeGame\\Library\\PackageCache\\com.unity.scriptablebuildpipeline@101dcb4353ce",
+      "fingerprint": "101dcb4353ce8bea5b4404d0ca31ce5a00ca751b",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.1.4",
       "source": "registry",
       "testable": false
     },
@@ -489,6 +519,26 @@
       "editorCompatibility": "2020.3.0a1",
       "version": "3.1.0",
       "source": "registry",
+      "testable": false
+    },
+    "com.unity.searcher@4.9.3": {
+      "name": "com.unity.searcher",
+      "displayName": "Searcher",
+      "resolvedPath": "C:\\Users\\User\\Desktop\\YBfolder\\StonehengeGame\\Library\\PackageCache\\com.unity.searcher@1e17ce91558d",
+      "fingerprint": "1e17ce91558d1d9127554adc03d275f39a7466a2",
+      "editorCompatibility": "2019.1.0a1",
+      "version": "4.9.3",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.rendering.light-transport@1.0.1": {
+      "name": "com.unity.rendering.light-transport",
+      "displayName": "Unity Light Transport Library",
+      "resolvedPath": "C:\\Users\\User\\Desktop\\YBfolder\\StonehengeGame\\Library\\PackageCache\\com.unity.rendering.light-transport@56c10358ff14",
+      "fingerprint": "56c10358ff14eb57febd7c4f20246fc73173d069",
+      "editorCompatibility": "2023.3.0b1",
+      "version": "1.0.1",
+      "source": "builtin",
       "testable": false
     }
   }

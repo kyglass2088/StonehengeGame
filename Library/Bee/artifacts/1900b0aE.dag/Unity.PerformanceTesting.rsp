@@ -377,7 +377,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.1.0f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.1.0f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.1.0f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Library/PackageCache/com.unity.collections@56bff8827a7e/Unity.Collections.PerformanceTests.Internal/AssemblyInfo.cs"
+"Library/PackageCache/com.unity.collections@d49facba0036/Unity.Collections.PerformanceTests.Internal/AssemblyInfo.cs"
 "Library/PackageCache/com.unity.test-framework.performance@92d1d09a72ed/Runtime/AssemblyInfo.cs"
 "Library/PackageCache/com.unity.test-framework.performance@92d1d09a72ed/Runtime/Attributes/PerformanceAttribute.cs"
 "Library/PackageCache/com.unity.test-framework.performance@92d1d09a72ed/Runtime/Attributes/RequiredMemberAttribute.cs"
