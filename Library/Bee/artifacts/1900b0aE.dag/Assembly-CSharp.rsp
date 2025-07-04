@@ -463,6 +463,7 @@
 "Assets/Scripts/StoneECS/Gravity/GravityComponent.cs"
 "Assets/Scripts/StoneECS/Gravity/GravityComponentAuthoring.cs"
 "Assets/Scripts/StoneECS/Gravity/GravitySystem.cs"
+"Assets/Scripts/TargetStone.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 /deterministic

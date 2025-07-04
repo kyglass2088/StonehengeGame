@@ -39,7 +39,12 @@ public class GameUI : MonoBehaviour
     private void OnThrowButtonClick()
     {
         projectileLauncher.ThrowStone();
+        throwBtn.SetEnabled(false);
     }
 
+    void OnThrowButtonClear()
+    {
+        throwBtn.SetEnabled(true);
+    }
 
 }
