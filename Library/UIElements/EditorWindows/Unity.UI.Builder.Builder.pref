@@ -104,7 +104,7 @@ MonoBehaviour:
   - '{"m_FixedPaneDimension":300.0}'
   - '{"m_FixedPaneDimension":20.0}'
   - '{"m_FixedPaneDimension":200.0}'
-  - '{"m_CachedScrollPositionCount":3,"m_OldestScrollPositionIndex":0,"m_CachedContentHeights":[767.0,765.0,850.0,0.0,0.0],"m_CachedScrollPositions":[{"scrollPosition":63.0,"maxScrollValue":63.0},{"scrollPosition":0.0,"maxScrollValue":61.0},{"scrollPosition":0.0,"maxScrollValue":251.0},{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0}]}'
+  - '{"m_CachedScrollPositionCount":3,"m_OldestScrollPositionIndex":0,"m_CachedContentHeights":[767.0,765.0,850.0,0.0,0.0],"m_CachedScrollPositions":[{"scrollPosition":63.0,"maxScrollValue":63.0},{"scrollPosition":0.0,"maxScrollValue":61.0},{"scrollPosition":89.0,"maxScrollValue":251.0},{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0}]}'
   - '{}'
   - '{}'
   - '{}'
