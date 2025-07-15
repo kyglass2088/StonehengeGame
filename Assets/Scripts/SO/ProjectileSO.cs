@@ -6,4 +6,7 @@ public class ProjectileSO : ScriptableObject
     public float Angle;
     public float Mass;
     public float Speed;
+
+    public float angleZ;
+    public float angleY;
 }

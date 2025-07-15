@@ -73,15 +73,19 @@
     <Analyzer Include="C:\Users\User\Desktop\YBfolder\StonehengeGame\Library\PackageCache\com.unity.entities@e581b903be8e\Unity.Entities\SourceGenerators\Unity.Entities.Analyzer.CodeFixes.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Stone\FlyingStone.cs" />
+    <Compile Include="Assets\Scripts\Stone\TargetStone.cs" />
     <Compile Include="Assets\Scripts\StoneECS\Gravity\GravitySystem.cs" />
     <Compile Include="Assets\Scripts\StoneECS\Gravity\GravityComponent.cs" />
-    <Compile Include="Assets\Scripts\TargetStone.cs" />
     <Compile Include="Assets\Scripts\StoneECS\Gravity\GravityComponentAuthoring.cs" />
+    <Compile Include="Assets\Scripts\UI\MainUI.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\RaycastDrawer.cs" />
     <Compile Include="Assets\Scripts\SO\ProjectileSO.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\ZombieSpawner.cs" />
     <Compile Include="Assets\Scripts\UI\GameUI.cs" />
+    <Compile Include="Assets\Scripts\UTIL.cs" />
     <Compile Include="Assets\Scripts\Projectile\ProjectileLauncher.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +105,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\UI Toolkit\USS\BasicUSS.uss" />
     <None Include="Assets\UI\GameUI.uxml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
