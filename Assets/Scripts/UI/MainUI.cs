@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -66,18 +68,25 @@ public class MainUI : MonoBehaviour
         TargetStone.OnKnockDownEvent += TargetStone_OnKnockDownEvent;
         FlyingStone.OnMissionComplete += FlyingStone_OnMissionComplete;
 
+        RaycastDrawer.OnGameLose += RaycastDrawer_OnGameWin; 
+
         Initialize();
         AddListener();
     }
 
-
+    private void RaycastDrawer_OnGameWin()
+    {
+        List<string> list = new List<string>();
+        list.Add("OK, You Lose! ");
+        ShowPopup(list, whenTouLoseGame);
+    }
 
     private void TargetStone_OnKnockDownEvent(StoneType obj)
     {
         List<string> list = new List<string>();
         list.Add("OK");
         list.Add("OK, You won! ");
-        ShowPopup(list);
+        ShowPopup(list, whenTouWonGame);
     }
     private void Update()
     {
@@ -86,7 +95,7 @@ public class MainUI : MonoBehaviour
             List<string> list = new List<string>();
             list.Add("OK");
             list.Add("OK, You won!");
-            ShowPopup(list);
+            ShowPopup(list, whenTouLoseGame);
         }
     }
 
@@ -141,7 +150,7 @@ public class MainUI : MonoBehaviour
         {
             Vector3 rotation = launchingPad.transform.eulerAngles;
             projectileSO.angleY = evt.newValue;
-            YSlider.label = string.Concat(evt.newValue.ToString(), " Angle");
+            YSlider.label = string.Concat(evt.newValue.ToString(), " YAngle");
 
             launchingPad.transform.rotation = Quaternion.Euler(rotation.x, evt.newValue, rotation.z);
         });
@@ -149,7 +158,7 @@ public class MainUI : MonoBehaviour
         {
             Vector3 rotation = launchingPad.transform.eulerAngles;
             projectileSO.angleZ = evt.newValue;
-            ZSlider.label = string.Concat(evt.newValue.ToString(), " Angle");
+            ZSlider.label = string.Concat(evt.newValue.ToString(), " ZAngle");
             launchingPad.transform.rotation = Quaternion.Euler(rotation.x, rotation.y, evt.newValue);
         });
         speedSlider.RegisterValueChangedCallback(evt =>
@@ -193,7 +202,17 @@ public class MainUI : MonoBehaviour
     {
 
     }
-    public void ShowPopup(List<string> texts)
+
+    void whenTouLoseGame()
+    {
+        Debug.Log("you Lose");
+    }
+    void whenTouWonGame()
+    {
+        Debug.Log("you Won");
+    }
+
+    public void ShowPopup(List<string> texts, Action myAction)
     {
         var _popupContainer = UTIL.Create<VisualElement>("full-box");
         var _popup = UTIL.Create<VisualElement>("popup-container");
@@ -209,6 +228,7 @@ public class MainUI : MonoBehaviour
         closebtn.text = "Close";
         closebtn.clicked += () =>
         {
+            myAction.Invoke();
             StartCoroutine(FadeOut(_popupContainer));
         };
 

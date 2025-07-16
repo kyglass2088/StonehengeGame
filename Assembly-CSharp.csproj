@@ -77,8 +77,10 @@
     <Compile Include="Assets\Scripts\Stone\TargetStone.cs" />
     <Compile Include="Assets\Scripts\StoneECS\Gravity\GravitySystem.cs" />
     <Compile Include="Assets\Scripts\StoneECS\Gravity\GravityComponent.cs" />
+    <Compile Include="Assets\Scripts\GoalLine.cs" />
     <Compile Include="Assets\Scripts\StoneECS\Gravity\GravityComponentAuthoring.cs" />
     <Compile Include="Assets\Scripts\UI\MainUI.cs" />
+    <Compile Include="Assets\Scripts\TargetStonManager.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\RaycastDrawer.cs" />
     <Compile Include="Assets\Scripts\SO\ProjectileSO.cs" />
