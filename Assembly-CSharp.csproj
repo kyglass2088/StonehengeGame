@@ -73,6 +73,9 @@
     <Analyzer Include="C:\Users\User\Desktop\YBfolder\StonehengeGame\Library\PackageCache\com.unity.entities@e581b903be8e\Unity.Entities\SourceGenerators\Unity.Entities.Analyzer.CodeFixes.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Stone\TargetStonManager.cs" />
+    <Compile Include="Assets\Scripts\RaycastAtHeight.cs" />
+    <Compile Include="Assets\Scripts\QuadCreator.cs" />
     <Compile Include="Assets\Scripts\Stone\FlyingStone.cs" />
     <Compile Include="Assets\Scripts\UTIL\UTIL.cs" />
     <Compile Include="Assets\Scripts\Stone\TargetStone.cs" />
@@ -81,7 +84,6 @@
     <Compile Include="Assets\Scripts\UTIL\GoalLine.cs" />
     <Compile Include="Assets\Scripts\StoneECS\Gravity\GravityComponentAuthoring.cs" />
     <Compile Include="Assets\Scripts\UI\MainUI.cs" />
-    <Compile Include="Assets\Scripts\TargetStonManager.cs" />
     <Compile Include="Assets\Scripts\UTIL\EdgeDistanceCalculator.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\RaycastDrawer.cs" />
