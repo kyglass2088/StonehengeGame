@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class RaycastDrawer : MonoBehaviour
 {
+    public static Action OnRayCastHitZombiEvent { get; internal set; }
+
     public static event Action OnGameLose;// Listner is GameManager or MainUI
 
     void Update()

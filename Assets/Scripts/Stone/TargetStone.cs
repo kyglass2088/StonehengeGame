@@ -14,13 +14,15 @@ public class TargetStone : MonoBehaviour
     public StoneType stoneType;
     public Renderer objRenderer;
 
+    MeshCollider meshCollider;
+
     float fadeDuration = 2f;
     Color originalColor;
     bool isHit = false;
 
     private void Start()
     {
-
+        meshCollider = GetComponent<MeshCollider>();
         originalColor = objRenderer.material.color;
 
     }
@@ -30,14 +32,37 @@ public class TargetStone : MonoBehaviour
         {
             OnHitByProjectile?.Invoke(stoneType);
             isHit = true;
+
+            foreach (ContactPoint hitcontact in collision.contacts)
+            {
+                VisualizeContact(hitcontact.point);
+            }
+
+            ContactPoint contact = collision.contacts[0];
+            Vector3 contactPoint = contact.point;
+
+            if (meshCollider != null)
+            {
+                float edgeDistance = EdgeDistanceCalculator.GetDistanceToNearestEdge(meshCollider, contactPoint);
+                Debug.Log("Distance to nearest edge : " + edgeDistance);
+            }
         }
+    }
+
+    void VisualizeContact(Vector3 point)
+    {
+        GameObject marker = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        marker.transform.position = point;
+        marker.transform.localScale = Vector3.one * 0.1f;
+        marker.GetComponent<Renderer>().material.color = Color.red;
+        Destroy(marker, 2f);
     }
 
     void Update()
     {
         if (isHit)
         {
-            if (Mathf.Abs(transform.eulerAngles.z) == 270 || Mathf.Abs(transform.eulerAngles.z) == 90)
+            if (Mathf.Abs(transform.eulerAngles.z - 270) < 30f || Mathf.Abs(transform.eulerAngles.z) == 90)
             {
                 OnKnockDownEvent?.Invoke(stoneType);
                 StartCoroutine(FadeOutObject());
@@ -45,6 +70,8 @@ public class TargetStone : MonoBehaviour
             }
         }
     }
+
+
 
     IEnumerator FadeOutObject()
     {
@@ -63,6 +90,4 @@ public class TargetStone : MonoBehaviour
 
         Destroy(gameObject);
     }
-
-
 }

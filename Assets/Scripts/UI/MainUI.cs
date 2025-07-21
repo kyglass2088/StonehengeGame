@@ -65,23 +65,23 @@ public class MainUI : MonoBehaviour
 
     private void Start()
     {
-        TargetStone.OnKnockDownEvent += TargetStone_OnKnockDownEvent;
+        //TargetStone.OnKnockDownEvent += TargetStone_OnKnockDownEvent;
         FlyingStone.OnMissionComplete += FlyingStone_OnMissionComplete;
 
-        RaycastDrawer.OnGameLose += RaycastDrawer_OnGameWin; 
+        RaycastDrawer.OnGameLose += RaycastDrawer_OnGameLose;
 
         Initialize();
         AddListener();
     }
 
-    private void RaycastDrawer_OnGameWin()
+    private void RaycastDrawer_OnGameLose()
     {
         List<string> list = new List<string>();
         list.Add("OK, You Lose! ");
         ShowPopup(list, whenTouLoseGame);
     }
 
-    private void TargetStone_OnKnockDownEvent(StoneType obj)
+    public void TargetStone_OnKnockDownEvent(StoneType obj)
     {
         List<string> list = new List<string>();
         list.Add("OK");
@@ -93,8 +93,7 @@ public class MainUI : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.P))
         {
             List<string> list = new List<string>();
-            list.Add("OK");
-            list.Add("OK, You won!");
+            list.Add("OK, You Lose!");
             ShowPopup(list, whenTouLoseGame);
         }
     }
@@ -190,7 +189,7 @@ public class MainUI : MonoBehaviour
         myProjectileLauncher.ThrowStone();
         container.visible = false;
     }
-    private void FlyingStone_OnMissionComplete()
+    public void FlyingStone_OnMissionComplete()
     {
         container.visible = true;
     }
@@ -253,5 +252,11 @@ public class MainUI : MonoBehaviour
 
 
     }
+
+    public void OnStageClearEvent()
+    {
+        container.Clear();
+    }
+
 
 }
