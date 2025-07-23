@@ -123,3 +123,7 @@ Library\Bee\artifacts\mvdfrm\Unity.Android.Gradle.dll_21649CF481B1EC63.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Android.Types.dll_CA4A9C887A23A089.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.Android.Extensions.dll_70C0C2C8ACBBB483.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.WindowsStandalone.Extensions.dll_C3276692DFDC3F55.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.dll_4B16FAA5016376E3.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.Mdb.dll_6717AAFEBC09DAE0.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.Pdb.dll_7E6A236E3ABEDC63.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.Rocks.dll_EC1F0C20321316E3.mvfrm
