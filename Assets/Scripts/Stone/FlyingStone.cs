@@ -10,7 +10,7 @@ public class FlyingStone : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             OnMissionComplete?.Invoke();
-            Destroy(gameObject, 3);
+            Destroy(gameObject, 1);
         }
 
         if (collision.gameObject.CompareTag("Target"))

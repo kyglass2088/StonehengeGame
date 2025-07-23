@@ -18,12 +18,32 @@ public class TargetStone : MonoBehaviour
     Color originalColor;
     bool isHit = false;
 
+    private void OnEnable()
+    {
+        RaycastAtHeight.OnNoStoneStandingEvent += OnNoStoneStandingEvent;
+
+        meshCollider = GetComponent<MeshCollider>();
+    }
+
+    private void OnDisable()
+    {
+        RaycastAtHeight.OnNoStoneStandingEvent -= OnNoStoneStandingEvent;
+    }
+
     private void Start()
     {
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         originalColor = objRenderer.material.color;
-
     }
+
+    void OnNoStoneStandingEvent()
+    {
+        StartCoroutine(FadeOutObject());
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Stone"))
@@ -60,7 +80,7 @@ public class TargetStone : MonoBehaviour
         Color finalColor = new Color(originalColor.r, originalColor.g, originalColor.b, 0f);
         objRenderer.material.color = finalColor;
         yield return new WaitForSeconds(1);
-
+        OnKnockDownEvent?.Invoke(stoneType);
         Destroy(gameObject);
     }
 
